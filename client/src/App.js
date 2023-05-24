@@ -14,7 +14,6 @@ const App = () => {
       {typeof backendData === "undefined" ? (
         <p>Loading...</p>
       ) : (
-        // console.dir(backendData)
         backendData.map((i) => <p key={i._id}>{i.word}</p>)
       )}
     </div>
